@@ -1,0 +1,19 @@
+{
+  "name": "http-classic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node ./src/app.js",
+    "dev": "node --watch ./src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0"
+  }
+}
