@@ -4,9 +4,11 @@
   "description": "",
   "main": "./src/service.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --group=-component --group=-integration",
     "start": "node ./src/service.js",
-    "dev": "node --watch ./src/service.js"
+    "dev": "node --watch ./src/service.js",
+    "test:component": "jest --group=component",
+    "test:integration": "jest --group=integration"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +18,13 @@
     "express": "^4.21.1",
     "path": "^0.12.7",
     "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-runner-groups": "^2.2.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "runner": "groups"
   }
 }
